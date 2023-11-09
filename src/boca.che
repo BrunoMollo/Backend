@@ -1,0 +1,51 @@
+# CHELANG - Ejemplos
+
+ che x es   2.3 ma 2             # => 4.3
+ che x es   .8 ma 2              # => 2.8
+ che x es   .8 meno 2            # => -1.2
+
+ che x es   "a" por 10                    # => "aaaaaaaaaa"
+
+ che x es   "marado " ma "marado"         # => "marado marado"
+
+ che x es     ["a","b","c"] ma "d"        # => ["a","b","c","d"]
+ che x es     ["a","b","c"] ma ["d","e"]  # => ["a","b","c","d","e"]
+ 
+ che messi es 10
+ digamos que sueldo seigual 0
+ digamos que doYdo son 4
+
+ che a es che b es che c es 32       # => todas esas variables son 32
+
+      a anda por 32        # => 1
+      a es nakever 2       # => 1
+
+      5 es unCachitoMeno 6      # => 1
+      5 es unCachitoMeno 4      # => 0
+
+      10 es maomeno 13          # => 0
+      10 es maomeno 12          # => 1
+
+    ponele que 1 no es 1 tonce 
+        che b es 0
+    oSi 3 anda por 3 tonce
+        che b es 1
+    aLoSumo
+        che b es 6
+    hastaaca           # => 1
+
+        che mirtha es 0
+        agarra por i seigual 0 hasta 10 tonce 
+            che mirtha es mirtha ma 30  
+        hastaaca           # => mirtha = 300
+
+      definime fibonacci(n) => 
+            ponele que n anda por 0 tonce
+                  tirame 0 
+            oSi n anda por 1 tonce 
+                  tirame 1 
+            aLoSumo 
+                  tirame (fibonacci(n meno 1) ma fibonacci(n meno 2))
+            hastaaca
+      
+      Cuchame( fibonacci(10) )
